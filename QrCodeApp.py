@@ -7,7 +7,7 @@ BoxLayout:
     Label:
         size_hint: None, None
         size: self.texture_size[0], 50
-        text: ' '.join([str(symbol) for symbol in qrcodecam.symbols])
+        text: ' '.join([str(symbol.data) for symbol in qrcodecam.symbols])
 """
 
 from kivy.app import App
